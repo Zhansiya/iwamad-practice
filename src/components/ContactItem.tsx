@@ -11,7 +11,7 @@ type ContactItemProps = {
 function ContactItem({ contact }: ContactItemProps) {
   return (
     <li>
-      {contact.label}: <a href={contact.url} target="_blank">{contact.url.replace('https://', '')}</a>
+        {contact.label}: <a href={contact.url} target="_blank">{contact.url.replace('mailto:', '').replace('https://', '')}</a>
     </li>
   );
 }
