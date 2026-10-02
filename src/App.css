@@ -103,3 +103,11 @@ nav {
 header {
   text-align: center;
 }
+table {
+  margin: 0 auto;
+}
+
+th, td {
+  text-align: center;
+  padding: 8px 16px;
+}

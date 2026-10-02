@@ -19,15 +19,23 @@ export default function SkillsPage() {
                 {skills.length === 0 ? (
                     <p>Пока нет навыков</p>
                 ) : (
-                    <ul>
-                        {skills.map((skill) => (
-                            <li key={skill.id}>
-                                <h3>{skill.name}</h3>
-                                <p>{skill.level}</p>
-                            </li>
-                        ))}
-                    </ul>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Skills</th>
+                                <th>Level</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {skills.map((skill) => (
+                                <tr key={skill.id}>
+                                    <td>{skill.name}</td>
+                                    <td>{skill.level}</td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
                 )}
-            </div></nav></main>
+        </div></nav></main>
   );
 }
