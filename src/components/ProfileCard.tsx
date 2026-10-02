@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import LikeButton from './LikeButton';
 
 type ProfileCardProps = {
   name: string;
@@ -7,8 +7,6 @@ type ProfileCardProps = {
 };
 
 function ProfileCard({ name, bio, avatarUrl }: ProfileCardProps) {
-    const [liked, setLiked] = useState(false);
-    
   return (
     <main>
       <article className="card p-6 border border-red-200 rounded-xl mx-auto my-10 max-w-md w-full">
@@ -19,13 +17,9 @@ function ProfileCard({ name, bio, avatarUrl }: ProfileCardProps) {
         <div>
           <p className="welcome">{bio}</p>
         </div>
-        <button id="likeButton"
-                className="like-btn"
-                onClick={() => setLiked(!liked)}
-        >
-            <span className="heart">{liked ? '❤️' : '🤍'}</span>
-            <span id="likeCount" className="count">{liked ? 1 : 0}</span>
-        </button></article></main>
+        <LikeButton />
+      </article>
+    </main>
   );
 }
 
