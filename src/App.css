@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    background-color: #8f939a;
+    color: #f1d2df;
+}
+
+/* .card {
+    width: 100%;
+    max-width: 500px;
+    margin: 30px;                   /* отступы снаружи рамки*/
+    /* padding: 25px;                  /* отрступы внутри рамки*/
+    /* border: 2px dotted pink;     /*розовая точечная рамка*/
+/*} */
+
+
+
+.welcome{
+    padding: 10px 50px 10px 50px; /*отступы внутри рамки, сверху, справа, снизу, слева */
+    
+}
+
+.links{
+    width: 100%;
+    max-width:500px;
+    display: flex;
+    gap: 16px;
+    justify-content: right;
+}
+
+.prof-image{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+    justify-content: center;
+}
+
+.avatar {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+
+@media (max-width: 480px) {
+  .links { flex-direction: column; }  
+  .card  { padding: 16px; }
+}
+
+.like-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+.like-btn span {
+  background-color: transparent;
+}
+
+.like-btn .heart {
+    color: #888;
+    transition: transform 0.2s ease;
+}
+
+.like-btn:hover {
+    background-color: #e8e8e8
+}
+
+.like-btn.liked .heart {
+    color: #ff4d6d;
+}
+
+.like-btn.liked .heart {
+    color: #ff4d6d;
+    transform: scale(1.2);
+}
+
+.like-btn.liked {
+  background-color: #ffeef0;
+  border-color: #ff4d6d;
+}
+
+.active {
+  font-weight: bold;
+  color: #efe1d1;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+header {
+  text-align: center;
+}
+table {
+  margin: 0 auto;
+}
+
+th, td {
+  text-align: center;
+  padding: 8px 16px;
+}
