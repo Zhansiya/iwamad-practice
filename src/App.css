@@ -53,16 +53,16 @@
 }
 
 .like-btn .heart {
-    color: #f0f0f0;
+    color: #888;
     transition: transform 0.2s ease;
 }
 
 .like-btn:hover {
-    background-color: #e8e8e8;
+    background-color: #e8e8e8
 }
 
 .like-btn.liked .heart {
-    background-color: #f0f0f0;;
+    background-color: #ffeef0;
     border-color: #ff4d6d;
     color: #ff4d6d;
 }
