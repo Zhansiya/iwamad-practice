@@ -5,13 +5,13 @@ import { Outlet } from 'react-router';
 export default function Layout() {
   return (
     <>
-      <Header />
+      <Header title="My Portfolio" />
 
       <main>
         <Outlet />
       </main>
 
-      <Footer />
+      <Footer name="Zhansiya Zheldybay" />
     </>
   );
 }

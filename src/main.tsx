@@ -9,7 +9,7 @@ createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter basename={import.meta.env.BASE_URL}>
       <LikesProvider>
-      <App />
+        <App />
       </LikesProvider>
     </BrowserRouter>
   </StrictMode>

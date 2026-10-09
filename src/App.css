@@ -1,7 +1,11 @@
 * {
     box-sizing: border-box;
-    background-color: #8f939a;
-    color: #f1d2df;
+}
+
+body {
+    margin: 0;
+    background-color: #48182f;
+    color: #d4cbc4;
 }
 
 /* .card {
@@ -48,8 +52,9 @@
 }
 
 .like-btn {
-    display: inline-flex;
+    display: flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     padding: 10px 20px;
     font-size: 18px;
@@ -58,8 +63,8 @@
     cursor: pointer;
     border-radius: 20px;
     transition: all 0.2s ease;
-    display: block;
     margin: 0 auto;
+    width: fit-content;
 }
 
 .like-btn span {
@@ -75,9 +80,6 @@
     background-color: #e8e8e8
 }
 
-.like-btn.liked .heart {
-    color: #ff4d6d;
-}
 
 .like-btn.liked .heart {
     color: #ff4d6d;
@@ -89,9 +91,18 @@
   border-color: #ff4d6d;
 }
 
-.active {
+nav a {
+  color: #c79a99;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav a.active {
   font-weight: bold;
-  color: #efe1d1;
+  text-decoration: underline;
 }
 
 nav {
@@ -111,3 +122,4 @@ th, td {
   text-align: center;
   padding: 8px 16px;
 }
+
