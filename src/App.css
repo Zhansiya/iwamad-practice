@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    background-color: #48182f;
+    color: #d4cbc4;
+}
+
 /* .card {
     width: 100%;
     max-width: 500px;
@@ -14,6 +20,7 @@
 
 .welcome{
     padding: 10px 50px 10px 50px; /*отступы внутри рамки, сверху, справа, снизу, слева */
+    
 }
 
 .links{
@@ -32,6 +39,11 @@
     justify-content: center;
 }
 
+.avatar {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 
 
 @media (max-width: 480px) {
@@ -40,8 +52,9 @@
 }
 
 .like-btn {
-    display: inline-flex;
+    display: flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     padding: 10px 20px;
     font-size: 18px;
@@ -50,24 +63,63 @@
     cursor: pointer;
     border-radius: 20px;
     transition: all 0.2s ease;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.like-btn span {
+  background-color: transparent;
 }
 
 .like-btn .heart {
-    color: #f0f0f0;
+    color: #888;
     transition: transform 0.2s ease;
 }
 
 .like-btn:hover {
-    background-color: #e8e8e8;
+    background-color: #e8e8e8
 }
 
-.like-btn.liked .heart {
-    background-color: #f0f0f0;;
-    border-color: #ff4d6d;
-    color: #ff4d6d;
-}
 
 .like-btn.liked .heart {
     color: #ff4d6d;
     transform: scale(1.2);
 }
+
+.like-btn.liked {
+  background-color: #ffeef0;
+  border-color: #ff4d6d;
+}
+
+nav a {
+  color: #c79a99;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+header {
+  text-align: center;
+}
+table {
+  margin: 0 auto;
+}
+
+th, td {
+  text-align: center;
+  padding: 8px 16px;
+}
+
