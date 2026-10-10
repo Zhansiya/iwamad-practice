@@ -8,15 +8,6 @@ body {
     color: #d4cbc4;
 }
 
-/* .card {
-    width: 100%;
-    max-width: 500px;
-    margin: 30px;                   /* отступы снаружи рамки*/
-    /* padding: 25px;                  /* отрступы внутри рамки*/
-    /* border: 2px dotted pink;     /*розовая точечная рамка*/
-/*} */
-
-
 
 .welcome{
     padding: 10px 50px 10px 50px; /*отступы внутри рамки, сверху, справа, снизу, слева */
@@ -42,13 +33,6 @@ body {
 .avatar {
   border-radius: 50%;
   object-fit: cover;
-}
-
-
-
-@media (max-width: 480px) {
-  .links { flex-direction: column; }  
-  .card  { padding: 16px; }
 }
 
 .like-btn {
@@ -105,15 +89,66 @@ nav a.active {
   text-decoration: underline;
 }
 
-nav {
+.site-header {
   display: flex;
-  justify-content: center;
-  gap: 16px;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-4);
 }
 
-header {
-  text-align: center;
+.site-brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
 }
+
+.site-logo {
+  width: 32px;
+  height: 32px;
+}
+
+.site-brand h1 {
+  margin: 0;
+}
+
+.site-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.site-nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-nav a:hover {
+  text-decoration: underline;
+}
+
+.site-nav a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.likes-count {
+  margin: 0;
+}
+
+@media (min-width: 640px) {
+  .site-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .site-nav {
+    flex-direction: row;
+    gap: var(--space-4);
+  }
+}
+
 table {
   margin: 0 auto;
 }
@@ -123,3 +158,8 @@ th, td {
   padding: 8px 16px;
 }
 
+.site-nav a:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: var(--radius-md);
+}

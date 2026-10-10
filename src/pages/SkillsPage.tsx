@@ -1,3 +1,5 @@
+import Tag from '../components/ui/Tag';
+
 export default function SkillsPage() {
    type Skill = {
         id: number;
@@ -10,7 +12,7 @@ export default function SkillsPage() {
         { id: 2, name: 'Communication', level: 'Advanced' },
         { id: 3, name: "HTML", level: 'Pre-Intermediate' },
         { id: 4, name: "Power BI", level: "Intermediate" },
-        { id: 5, name: 'Teamework', level: 'Advanced' },
+        { id: 5, name: 'Teamwork', level: 'Advanced' },
     ];
 
   return (
@@ -29,7 +31,9 @@ export default function SkillsPage() {
                         <tbody>
                             {skills.map((skill) => (
                                 <tr key={skill.id}>
-                                    <td>{skill.name}</td>
+                                    <td>
+                                        <Tag label={skill.name} />
+                                    </td>
                                     <td>{skill.level}</td>
                                 </tr>
                             ))}
