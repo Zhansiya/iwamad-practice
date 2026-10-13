@@ -22,6 +22,7 @@ function Header({ title }: HeaderProps) {
 
       <nav className="site-nav" aria-label="Main navigation">
         <NavLink to="/">Home</NavLink>
+        <NavLink to="/register">Register</NavLink>
         <NavLink to="/skills">Skills</NavLink>
         <NavLink to="/contact">Contact</NavLink>
       </nav>

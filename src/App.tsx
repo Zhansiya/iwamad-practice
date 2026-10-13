@@ -5,6 +5,7 @@ import SkillsPage from './pages/SkillsPage';
 import HomePage from './pages/HomePage'; 
 import NotFoundPage from './pages/NotFoundPage';
 import ContactPage from './pages/ContactPage';
+import RegisterPage from './pages/RegisterPage'; 
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Route index element={<HomePage />} />
       <Route path="skills" element={<SkillsPage />} />
       <Route path="contact" element={<ContactPage />} />
+      <Route path="register" element={<RegisterPage />} />
       <Route path="*" element={<NotFoundPage />} />
     </Route>
   </Routes>
